@@ -30,7 +30,7 @@ async def card_handler(call: CallbackQuery):
     await call.message.delete()
 
     await call.message.answer_photo(
-        photo='https://telegra.ph/file/d9e386fd4c8d1cf593154.png 2',
+        photo='https://telegra.ph/file/d9e386fd4c8d1cf593154.png',
         caption=f"<b>Введите сумму вывода:</b>",
         reply_markup=return_markup()
     )

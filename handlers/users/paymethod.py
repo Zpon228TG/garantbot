@@ -12,7 +12,7 @@ from utils import Cryptobot, config, PayOk
 async def payments_handler(call: CallbackQuery):
     await call.message.edit_media(
         InputMediaPhoto(
-            media=('https://telegra.ph/file/81baeb7d21293bc7ea1b1.png 2'),
+            media=('https://telegra.ph/file/81baeb7d21293bc7ea1b1.png'),
             caption="<b>Выберите способ пополнения:</b>",
         ),
         reply_markup=payment_markup()

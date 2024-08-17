@@ -32,7 +32,7 @@ async def close_handler(call: CallbackQuery):
 async def return_handler(call: CallbackQuery):
     if call.data.split(":")[1] == "default":
         await call.message.edit_media(
-            InputMediaPhoto(media=('https://telegra.ph/file/c02319db76b95f2eab4de.png 2'), caption=''),
+            InputMediaPhoto(media=('https://telegra.ph/file/c02319db76b95f2eab4de.png'), caption=''),
             reply_markup=garant_markup())
     elif call.data.split(":")[1] == "cabinet":
         user = await Users.get(user_id=call.from_user.id)
@@ -104,7 +104,7 @@ async def parners_handler(call: CallbackQuery):
         InputMediaPhoto(
             media=('https://telegra.ph/file/3d4f38822820766cbedfd.png'),
             caption=refferal_msg.format(
-                bot_login="ЛОГИН",
+                bot_login="CryptoGarantsBot",
                 ref_code=call.from_user.id,
                 ref_percent=config.config("ref_percent")
             ),

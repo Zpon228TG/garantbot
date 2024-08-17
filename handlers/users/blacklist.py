@@ -20,7 +20,7 @@ from utils import config
 async def blacklist_handler(call: CallbackQuery):
     await call.message.edit_media(
         InputMediaPhoto(
-            media=('https://telegra.ph/file/5cca1b9f425cdef886e16.png 2'),
+            media=('https://telegra.ph/file/5cca1b9f425cdef886e16.png'),
             caption=blacklist_msg,
         ),
         reply_markup=blacklist_markup()
