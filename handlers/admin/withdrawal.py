@@ -16,7 +16,7 @@ async def withdrawal_handler(msg: Message):
         )
     else:
         await msg.answer(
-            text="<b>Пока нет активных выводов!</b>"
+            text="<b>Бро, пока нет активных выводов!</b>"
         )
 
 

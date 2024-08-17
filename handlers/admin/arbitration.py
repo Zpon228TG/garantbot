@@ -67,7 +67,7 @@ async def favor_handler(call: CallbackQuery):
     )
 
     await call.message.edit_text(
-        text=f'<b>🌀 Cделка #C_{deal.id} успешно закрыта в пользу покупателя</b>'
+        text=f'<b>🌀 Cделка #CG_{deal.id} успешно закрыта в пользу покупателя</b>'
     )
     await bot.send_message(
         chat_id=deal.buyer_id,
